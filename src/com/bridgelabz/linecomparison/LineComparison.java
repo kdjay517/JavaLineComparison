@@ -35,8 +35,18 @@ public class LineComparison {
 		dis2 = Math.sqrt(Math.pow(a2-a1, 2) + Math.pow(b2-b1, 2));
 		int b = (int)dis2;
 		System.out.println("distancebetween"+"("+a1+","+b1+"),"+"("+a2+","+b2+")==>"+dis2);
-		System.out.println(a == b);
-		
+		if (a == b) {
+			System.out.println("Line Length L1" +a+ "and Line Length L2" +b+ "equal" );
+		}
+			
+		else if (a>b) {
+			System.out.println("Line Length L1" +a+ "is greater than Line Length L2" +b);
+		}
+			
+		else {
+			System.out.println("Line Length L1" +a+ "is lesser than Line Length L2" +b);
+		}
+			
 	}
 
 }
